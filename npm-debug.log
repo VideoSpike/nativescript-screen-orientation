@@ -1,0 +1,98 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.3
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/rajeshbatheja/smg/nativescript/plugin-practices/plugins/orientation-final/nativescript-screen-orientation/nativescript-screen-orientation',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/rajeshbatheja/.npm/nativescript-screen-orientation/1.0.0/package.tgz not in flight; packing
+9 verbose tar pack [ '/Users/rajeshbatheja/.npm/nativescript-screen-orientation/1.0.0/package.tgz',
+9 verbose tar pack   '/Users/rajeshbatheja/smg/nativescript/plugin-practices/plugins/orientation-final/nativescript-screen-orientation/nativescript-screen-orientation' ]
+10 verbose tarball /Users/rajeshbatheja/.npm/nativescript-screen-orientation/1.0.0/package.tgz
+11 verbose folder /Users/rajeshbatheja/smg/nativescript/plugin-practices/plugins/orientation-final/nativescript-screen-orientation/nativescript-screen-orientation
+12 info prepublish nativescript-screen-orientation@1.0.0
+13 verbose addLocalTarball adding from inside cache /Users/rajeshbatheja/.npm/nativescript-screen-orientation/1.0.0/package.tgz
+14 silly cache afterAdd nativescript-screen-orientation@1.0.0
+15 verbose afterAdd /Users/rajeshbatheja/.npm/nativescript-screen-orientation/1.0.0/package/package.json not in flight; writing
+16 verbose afterAdd /Users/rajeshbatheja/.npm/nativescript-screen-orientation/1.0.0/package/package.json written
+17 silly publish { name: 'nativescript-screen-orientation',
+17 silly publish   version: '1.0.0',
+17 silly publish   description: 'A plugin to force change the orientation of a page programmatically in NativeScript. Supports both Android and iOS.',
+17 silly publish   main: 'screen-orientation.js',
+17 silly publish   nativescript: { platforms: { ios: '1.5.0', android: '1.5.0' } },
+17 silly publish   scripts: {},
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'https://github.com/VideoSpike/nativescript-screen-orientation.git' },
+17 silly publish   keywords:
+17 silly publish    [ 'nativescript',
+17 silly publish      'orientation-change',
+17 silly publish      'force-orientation',
+17 silly publish      'lock-orientation' ],
+17 silly publish   author: { name: 'Batheja Sumeet', email: 'sumeet@videospike.com' },
+17 silly publish   license: 'MIT',
+17 silly publish   bugs: { url: 'https://github.com/VideoSpike/nativescript-screen-orientation/issues' },
+17 silly publish   homepage: 'https://github.com/VideoSpike/nativescript-screen-orientation',
+17 silly publish   readme: '\n\nA plugin to force change the orientation of a page programmatically in NativeScript. Supports both Android and iOS.\n\n---------------------------\n\nCode Sample\n===========\n\n   \n\n    var orientationModule = require("nativescript-screen-orientation");\n        \n      function pageLoaded(){\n            orientationModule.setCurrentOrientation("landscape",function(){\n                    console.log("landscape orientation set");\n                });\n            }\n           \n       function onNavigatingFrom(){\n            orientationModule.orientationCleanup();\n            }\n    exports.pageLoad=pageLoaded;\n    exports.onNavigatingFrom=onNavigatingFrom;\n\n\n----------\n\n\nMotivation\n-------------\n To allow force setting of orientation at  page - level programmatically.\n\n\n\nInstallation\n-------------------\n\n    tns plugin add nativescript-screen-orientation\n\n----------\n\n\nAPI Reference\n-------------\nAllowed orientations are \'portrait\', \'landscape\' and \'all\'.\n\nIn order to force an orientation, hook the respective `setCurrentOrientation`  methods at the **pageLoad** event of page, while make sure the method `orientationCleanup` is called at the **navigatingFrom** event of the page.\n\n \n\n - `setCurrentOrientation(orientation,callback)`\n\n      \n      `orientation` is a string with possible values \'landscape\' , \'portrait\' and  \'all\' . Parameter `callback`  is a function to call once the orientation is set, can be null.\n\n - `orientationCleanup()`\n\n      should be called on the **navigatingFrom** event if `setCurrentOrientation` is called, if this method is not called, can lead to inconsistent behavior.\n          \n\nTroubleshooting\n=============\n\nIn iOS , on iPad, if the plugin is not working, it is due to changes in the features supported by iPad. It is required for latest iOS to support multiple apps at the same time by screen sharing, which discourages locking of orientation in a particular mode. In order to make it work on iPad, set the key **\'Requires Fullscreen\'** in xCode under app settings.',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: 'b9491994760df74724db89d63000df136b38c0ff',
+17 silly publish   _id: 'nativescript-screen-orientation@1.0.0',
+17 silly publish   _shasum: '1f1ef9c79acd5868b86935e553bb7c067d973492',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name nativescript-screen-orientation
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/nativescript-screen-orientation
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading /Users/rajeshbatheja/.npm/nativescript-screen-orientation/1.0.0/package.tgz
+25 verbose request uri https://registry.npmjs.org/nativescript-screen-orientation
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 9:19:14 PM
+28 verbose request using bearer token for auth
+29 verbose request id b8f2c5968c8fcfcc
+30 http request PUT https://registry.npmjs.org/nativescript-screen-orientation
+31 http 403 https://registry.npmjs.org/nativescript-screen-orientation
+32 verbose headers { 'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=300',
+32 verbose headers   'content-length': '95',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   date: 'Sat, 16 Jan 2016 15:49:14 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-sin6922-SIN',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1452959353.183975,VS0,VE929' }
+33 verbose request invalidating /Users/rajeshbatheja/.npm/registry.npmjs.org/nativescript-screen-orientation on PUT
+34 error publish Failed PUT 403
+35 verbose stack Error: "You cannot publish over the previously published version 1.0.0." : nativescript-screen-orientation
+35 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+35 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+35 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+35 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+35 verbose stack     at emitTwo (events.js:87:13)
+35 verbose stack     at Request.emit (events.js:172:7)
+35 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1063:14)
+35 verbose stack     at emitOne (events.js:82:20)
+35 verbose stack     at Request.emit (events.js:169:7)
+35 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+36 verbose statusCode 403
+37 verbose pkgid nativescript-screen-orientation
+38 verbose cwd /Users/rajeshbatheja/smg/nativescript/plugin-practices/plugins/orientation-final/nativescript-screen-orientation/nativescript-screen-orientation
+39 error Darwin 14.5.0
+40 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+41 error node v4.2.3
+42 error npm  v2.14.7
+43 error code E403
+44 error "You cannot publish over the previously published version 1.0.0." : nativescript-screen-orientation
+45 error If you need help, you may report this error at:
+45 error     <https://github.com/npm/npm/issues>
+46 verbose exit [ 1, true ]
