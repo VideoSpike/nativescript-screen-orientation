@@ -57,7 +57,7 @@ In order to force an orientation, hook the respective `setCurrentOrientation`  m
 
  - `orientationCleanup()`
 
-      should be called on the **navigatingFrom** event if setCurrentOrientation, is called, if this method is not called, can lead to inconsistent behavior.
+      should be called on the **navigatingFrom** event if `setCurrentOrientation` is called, if this method is not called, can lead to inconsistent behavior.
           
 
 Troubleshooting
