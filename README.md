@@ -1,5 +1,4 @@
-Synopsis
-=======
+
 
 A plugin to force change the orientation of a page programmatically in NativeScript. Supports both Android and iOS.
 
