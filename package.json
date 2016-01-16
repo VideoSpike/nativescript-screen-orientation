@@ -5,8 +5,8 @@
   "main": "screen-orientation.js",
   "nativescript": {
     "platforms": {
-      "ios": “1.5.0”,
-      "android": “1.5.0”
+      "ios": “1.5.0“,
+      "android": "1.5.0"
     }
   },
   "scripts": {},
