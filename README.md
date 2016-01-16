@@ -14,7 +14,7 @@ Code Sample
         
       function pageLoaded(){
             orientationModule.setCurrentOrientation("landscape",function(){
-                    console.log("landscape orientation     set");
+                    console.log("landscape orientation set");
                 });
             }
            
@@ -55,7 +55,7 @@ In order to force an orientation, hook the respective `setCurrentOrientation`  m
       
       `orientation` is a string with possible values 'landscape' , 'portrait' and  'all' . Parameter `callback`  is a function to call once the orientation is set, can be null.
 
- - orientationCleanup
+ - `orientationCleanup()`
 
       should be called on the **navigatingFrom** event if setCurrentOrientation, is called, if this method is not called, can lead to inconsistent behavior.
           
