@@ -1,3 +1,5 @@
+/*IOS orientation plugin */
+
 var frameModule=require("ui/frame"),
     application=require("application");
 

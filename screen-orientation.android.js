@@ -1,3 +1,6 @@
+
+/* Android orientation plugin */
+
 var application=require("application"),
     timer=require("timer");
 
