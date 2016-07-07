@@ -1,6 +1,6 @@
 {
   "name": "nativescript-screen-orientation",
-  "version": “1.0.1”,
+  "version": "1.0.1",
   "description": "A plugin to force change the orientation of a page programmatically in NativeScript. Supports both Android and iOS.",
   "main": "screen-orientation.js",
   "nativescript": {
