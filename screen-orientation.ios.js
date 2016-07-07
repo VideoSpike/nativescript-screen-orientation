@@ -101,13 +101,17 @@ function setOrientationsForViewControllers(){
 
     };
 
+    if("landscape"==orientationType){
+        UIDevice.currentDevice().setValueForKey(UIInterfaceOrientation.UIInterfaceOrientationLandscapeRight, "orientation")
+    }
+    if("portrait"==orientationType){
+        UIDevice.currentDevice().setValueForKey(UIInterfaceOrientation.UIInterfaceOrientationPortrait, "orientation")
+    }if("all"==orientationType){
+        //no-op
+    }if("allbutupsidedown"==orientationType){
+        //no-op
+    }
 
-    var window=UIApplication.sharedApplication().windows.objectAtIndex(0),
-        rootController=window.rootViewController,
-        tempmodal=UIViewController.alloc().init();
-
-    rootController.presentViewControllerAnimatedCompletion(tempmodal,false,null);
-    rootController.dismissViewControllerAnimatedCompletion(false,completionCallback);
 
     //if(completionCallback){
     //    completionCallback();
