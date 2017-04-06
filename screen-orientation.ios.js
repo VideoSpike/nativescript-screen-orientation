@@ -3,6 +3,9 @@
  */
 
 
+var frameModule = require("ui/frame");
+
+
 /**
  * find the exact object by which the property is owned in the prototype chain
  * @param object
@@ -23,12 +26,10 @@ function findPrototypeForProperty(object,property){
  */
 function setShouldAutoRotate(bool){
     var prototypeForNavController = findPrototypeForProperty(frameModule.topmost().ios.controller,"shouldAutorotate");
-    nativeShouldAutorotate = Object.getOwnPropertyDescriptor("shouldAutorotate");
     Object.defineProperty(prototypeForNavController,"shouldAutorotate",{
         configurable:true,
         enumerable:false,
         get:function(){
-
             return bool;
         }
     })
@@ -69,5 +70,5 @@ function cleanupOrientation(){
 exports.setCurrentOrientation=setCurrentOrientation;
 
 
-exports.orientationCleanup=cleanupOrientation();
+exports.orientationCleanup=cleanupOrientation;
 
