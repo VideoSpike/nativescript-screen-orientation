@@ -37,11 +37,7 @@ Code Sample (Angular)
 
     import {setCurrentOrientation , orientationCleanup} from 'nativescript-screen-orientation';
     
-     @Component({
-   moduleId:module.id,
-   selector:"sample",
-   templateUrl:"./sample.component.html"
-   })
+     @Component({moduleId:module.id,selector:"sample",templateUrl:"./sample.component.html"})
         
      export class SampleComponent{
       constructor(page:Page){
