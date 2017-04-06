@@ -1,48 +1,4 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "nativescript-screen-orientation",
-        "scope": null,
-        "escapedName": "nativescript-screen-orientation",
-        "name": "nativescript-screen-orientation",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
-      },
-      "/Users/Sumeet/smg/work/Jason H/mobile/nativescript/plugin-practices/plugins/screenor/nsor"
-    ]
-  ],
-  "_from": "nativescript-screen-orientation@latest",
-  "_id": "nativescript-screen-orientation@1.0.2",
-  "_inCache": true,
-  "_installable": true,
-  "_location": "/nativescript-screen-orientation",
-  "_nodeVersion": "4.2.3",
-  "_npmUser": {
-    "name": "bathejasumeet",
-    "email": "sumeet@videospike.com"
-  },
-  "_npmVersion": "2.14.7",
-  "_phantomChildren": {},
-  "_requested": {
-    "raw": "nativescript-screen-orientation",
-    "scope": null,
-    "escapedName": "nativescript-screen-orientation",
-    "name": "nativescript-screen-orientation",
-    "rawSpec": "",
-    "spec": "latest",
-    "type": "tag"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/nativescript-screen-orientation/-/nativescript-screen-orientation-1.0.2.tgz",
-  "_shasum": "08ed7affa437b0e483d5ea0746c668bbbe101b52",
-  "_shrinkwrap": null,
-  "_spec": "nativescript-screen-orientation",
-  "_where": "/Users/Sumeet/smg/work/Jason H/mobile/nativescript/plugin-practices/plugins/screenor/nsor",
   "author": {
     "name": "Batheja Sumeet",
     "email": "sumeet@videospike.com"
@@ -67,7 +23,7 @@
     "lock-orientation"
   ],
   "license": "MIT",
-  "main": "screen-orientation.js",
+  "main": "screen-orientation",
   "maintainers": [
     {
       "name": "bathejasumeet",
@@ -88,5 +44,6 @@
     "url": "git+https://github.com/VideoSpike/nativescript-screen-orientation.git"
   },
   "scripts": {},
-  "version": "1.0.2"
+  "version": "1.0.2",
+  "typings":"screen-orientation.d.ts"
 }

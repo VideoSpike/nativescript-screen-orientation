@@ -54,8 +54,9 @@ function setCurrentOrientation(orientationType,callback){
     }else if("all" == orientationType.toLowerCase()){
         setShouldAutoRotate(true);
     }
-
-    callback();
+    if(undefined!==callback){
+        callback();
+    }
 
 }
 
