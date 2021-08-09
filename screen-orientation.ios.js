@@ -3,7 +3,7 @@
  */
 
 
-var frameModule = require("ui/frame");
+var frameModule = require("@nativescript/core/ui/frame");
 
 
 /**
@@ -25,7 +25,7 @@ function findPrototypeForProperty(object,property){
  * @param bool
  */
 function setShouldAutoRotate(bool){
-    var prototypeForNavController = findPrototypeForProperty(frameModule.topmost().ios.controller,"shouldAutorotate");
+    var prototypeForNavController = findPrototypeForProperty(frameModule.Frame.topmost().ios.controller,"shouldAutorotate");
     Object.defineProperty(prototypeForNavController,"shouldAutorotate",{
         configurable:true,
         enumerable:false,

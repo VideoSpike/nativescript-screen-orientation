@@ -1,5 +1,5 @@
-var application=require("application"),
-    timer=require("timer");
+var application=require("@nativescript/core/application"),
+    timer=require("@nativescript/core/timer");
 
 var callback=null,
     orientationConstants={
